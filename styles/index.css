@@ -28,13 +28,15 @@ main .to_do input {
 }
 main .to_do #plus_btn {
     font-size:0.75rem; font-weight:500;
-    background-color: #333; color:#fff; border-radius: 50px;
+    color:#333; border-radius: 50px;
+    border:1px solid #333;
     padding:10px 30px;
 }
 main .to_do #plus_btn:hover {
-    background-color: #FF7D29;
+    background-color: #FF7D29; color:#fff;
     padding:10px 30px;
-    transition:background-color 0.8s ease, color 1s ease;
+    border:1px solid #FF7D29;
+    transition:background-color 0.8s ease, color 0.5s ease, border 0.5s ease;
 }
 main .list {
     margin-top:80px;
@@ -69,7 +71,8 @@ main .list li #close_btn {}
     main .to_do input {
         width:200px;
     }
-    main .to_do #plus_btn {
+    main .to_do #plus_btn,
+    main .to_do #plus_btn:hover {
         padding:10px 20px;
         font-weight:400;
     }
