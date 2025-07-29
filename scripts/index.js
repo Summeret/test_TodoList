@@ -12,7 +12,7 @@ plusBtn.addEventListener('click',()=>{
     if(listBox.value == ''){
         alert('할 일을 입력하세요');
     }else{
-        list.style.display = 'block';
+        list.textContent = listBox.value;
     }
 })
 
